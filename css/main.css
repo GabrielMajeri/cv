@@ -1,3 +1,16 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 1rem 2rem;
+    max-width: 52rem;
+}
+
+@media screen and (min-width: 54rem) {
+    body {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

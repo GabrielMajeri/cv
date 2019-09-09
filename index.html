@@ -7,65 +7,187 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" type="text/css" rel="stylesheet" media="all"/>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" type="text/css" rel="stylesheet" media="all" integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous"/>
         <link href="/css/main.css" type="text/css" rel="stylesheet" media="all"/>
+        <link href="/css/print.css" type="text/css" rel="stylesheet" media="print"/>
 
-        <title>Gabriel Majeri</title>
+        <base target="_blank"/>
+
+        <title>CV &mdash; Gabriel Majeri</title>
     </head>
     <body>
         <header>
             <h1>Gabriel Majeri</h1>
 
-            <!-- TODO: navigation bar -->
+            <ul>
+                <li><a href="https://gabrielmajeri.ro"><i class="fas fa-home"></i>&nbsp;gabrielmajeri.ro</a></li>
+                <li><a href="mailto:gabriel.majeri6@gmail.com"><i class="fas fa-envelope-square"></i>&nbsp;gabriel.majeri6@gmail.com</a></li>
+                <li><a href="https://github.com/GabrielMajeri"><i class="fab fa-github-square"></i>&nbsp;GabrielMajeri</a></li>
+                <li><a href="https://www.linkedin.com/in/gabriel-majeri/"><i class="fab fa-linkedin"></i>&nbsp;gabriel-majeri</a></li>
+                <li><a href="https://www.kaggle.com/gabrielmajeri"><i class="fab fa-kaggle"></i>&nbsp;gabrielmajeri</a></li>
+            </ul>
         </header>
         <main>
-            <header>
-                <h1>Welcome!</h1>
-                <h2>What is this?</h2>
-                <h2>Who am I?</h2>
-                <p>I am a computer science student who is always eager to learn new things. I'm highly passionate about software engineering and looking forward to contributing to interesting projects.</p>
-            </header>
+            <section>
+                <h1>About me</h1>
+                <p>I am a computer science student who is always eager to learn new things. I'm highly passionate about software engineering and look forward to contributing to interesting projects.</p>
+                <!-- TODO: favourite quote -->
+            </section>
             <section>
                 <h1>Experience</h1>
                 <section>
-                    <h1>Junior Researcher Intern at Bitdefender</h1>
-                    <p>Spent the summer doing data analysis and machine learning projects.</p>
-                    <!-- TODO: expand on what kind of projects I worked on -->
+                    <header>
+                        <h1>Junior Researcher Intern at Bitdefender</h1>
+                        <span class="time-span">July&ndash;August 2019</span>
+                    </header>
+                    <p>Worked on data analysis and machine learning projects related to malware detection.</p>
+                    <ul>
+                        <li>Implemented <a href="https://github.com/GabrielMajeri/anomrank">anomaly detection algorithm</a> for network traffic.</li>
+                        <li>Implemented reinforcement learning agents in an <a href="https://gym.openai.com/">OpenAI Gym</a>-compatible environment.</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <h1>Education</h1>
+                <section>
+                    <header>
+                        <h1>Faculty of Mathematics and Computer Science, University of Bucharest</h1>
+                        <span class="time-span">2018&ndash;2021</span>
+                        <span>Computer Science BSc</span>
+                    </header>
+                    <p>Excellent grades at software engineering courses such as <em>object-oriented programming</em> and <em>algorithms and data structures</em>, and mathematical courses such as <em>algebra</em> and <em>real analysis</em>.</p>
+                </section>
+                <section>
+                    <header>
+                        <h1>„Mihai Viteazul” National College</h1>
+                        <span class="time-span">2014&ndash;2018</span>
+                        <span>High School</span>
+                    </header>
+                    <p>Graduated at the top of the intensive informatics class.</p>
                 </section>
             </section>
             <section>
                 <h1>Volunteering</h1>
                 <section>
-                    <h1>PR & Marketing Volunteer at ASMI</h1>
-                    <!-- TODO: expand on achievements -->
+                    <header>
+                        <h1>PR & Marketing Volunteer at ASMI</h1>
+                        <span class="time-span">May 2019&ndash;Present</span>
+                    </header>
+
+                    <p>I'm a volunteer at <a href="http://as-mi.ro/">ASMI</a>, our faculty's student association.</p>
+                    <ul>
+                        <li>Created digital content using tools such as Photoshop.</li>
+                        <li>Responsible for marketing the <a href="http://smarthack.as-mi.ro/">Smarthack 2019</a> hackathon.</li>
+                        <li>Helped with improving the association's website.</li>
+                    </ul>
+                </section>
+                <section>
+                    <header>
+                        <h1>Robot Programmer</h1>
+                        <span class="time-span">December 2016&ndash;May 2018</span>
+                    </header>
+                    <p>Programmer in my <a href="https://github.com/QubeRomania">high school's robotics team</a> which participated in the <a href="https://natieprineducatie.ro/">First Tech Challenge national competition</a>. The <a href="https://github.com/QubeRomania/ftc-2017-2018">robot's code</a> was written in Kotlin.</p>
+                    <p>Our team was a finalist in each participating year, and in our second year we won first place and went to the global competition in Detroit.</p>
                 </section>
             </section>
             <section>
-                <h1>Education</h1>
-                <!-- TODO: list university, high school -->
-            </section>
-            <section>
-                <h1>Open-Source Contributions</h1>
-                <!-- TODO: mention years of experience -->
+                <h1>Skills</h1>
                 <section>
-                    <h1>Rust</h1>
+                    <h1>Programming Languages</h1>
+                    <section>
+                        <header>
+                            <h1>Rust</h1>
+                            <span class="time-span">Used for 2+ years</span>
+                        </header>
+                        <ul>
+                            <li>Creator and maintainer of the <a href="https://github.com/rust-osdev/uefi-rs">uefi-rs</a> library which makes it easy to write bare-metal kernels and hypervisors in Rust.</li>
+                            <li>Comaintainer of the <a href="https://github.com/rust-lang-nursery/packed_simd">packed_simd</a> library for high-performance numerical computing. Profiled and improved the performance of the library in existing benchmarks.</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <header>
+                            <h1>Python</h1>
+                            <span class="time-span">Used for 5+ years</span>
+                        </header>
+                        <p>Python is my language of choice for data science and machine learning competitions.</p>
+                        <p>My application for the 2019 edition of the <a href="https://www.eeml.eu/">Eastern European ML Summer School</a> involved <a href="https://github.com/GabrielMajeri/side-fda">reproducing the results of a computer vision paper</a>. As part of this project I also implemented and published a <a href="https://github.com/GabrielMajeri/nyuv2-python-toolbox">data processing toolbox for the NYU v2 dataset</a>.</p>
+                        <p>For the formal languages course I've implemented a <a href="https://github.com/GabrielMajeri/LL-K-Parser">LL(k) parser framework</a>.</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h1>C/C++</h1>
+                            <span class="time-span">Used for 5+ years</span>
+                        </header>
+                        <p>I've spent a lot of time using C++ for game development. I've implemented the board game <a href="https://github.com/GabrielMajeri/gomoku">Gomoku</a>, an educative <a href="https://github.com/GabrielMajeri/SpaceExplorer">space exploration game</a>, a clone of Conway's <a href="https://github.com/GabrielMajeri/Game-of-Life-CPP">Game of Life</a>, and a quad tree algorithm for <a href="https://github.com/GabrielMajeri/QuadTreeSFML">efficient collision detection</a>.</p>
+                        <p>Started learning C for the purpose of hobby OS development and systems programming. A lot of my knowledge comes from reading the <a href="https://en.wikipedia.org/wiki/The_C_Programming_Language">K&R</a> book.</p>
+                        <p>I've used C for a university project related to <a href="https://github.com/GabrielMajeri/pp-project">cryptography and pattern recognition</a>.</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h1>Other</h1>
+                            <span>Various programming languages I've written projects in or dabbled with</span>
+                        </header>
+                        <ul>
+                            <li><b>Functional</b>: Haskell, Lisp (both <a href="https://en.wikipedia.org/wiki/Emacs_Lisp">Elisp</a> and the dialect used at the <a href="https://www.acsl.org/">ACSL</a> contest)</li>
+                            <li><b>Assembly</b>: x86, ARM (for <a href="https://github.com/GabrielMajeri/semihosting">barebones development</a> on Raspberry Pi) and MIPS (learned at university)</li>
+                            <li><b>Web</b>: HTML, CSS, JavaScript, TypeScript</li>
+                            <li><b>.NET</b>: C#, Visual Basic (used for <a href="https://www.uipath.com/rpa/robotic-process-automation">RPA with UiPath Studio</a>)</li>
+                            <li><b>JVM-based</b>: Kotlin (for Android app development), Java</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <h1>Technologies</h1>
+                    <section>
+                        <header>
+                            <h1>Git</h1>
+                            <span class="time-span">4+ years</span>
+                        </header>
+                        <p>Experience with Git-based workflows, maintaining repositories, reviewing code and handling merge conflicts.</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h1>Linux</h1>
+                            <span class="time-span">5+ years</span>
+                        </header>
+                        <p>Bash scripting for automating various tasks.</p>
+                        <p>Set up and managed virtual machines with <a href="https://libvirt.org/">libvirt</a> and <a href="https://www.qemu.org/">QEMU</a>.</p>
+                        <p>Familiarity with <a href="https://www.docker.com/">Docker</a> and <code>docker-compose</code>, used for handling software dependencies.</p>
+                    </section>
+                    <section>
+                        <h1>LaTeX</h1>
+                        <p>Used for editing school documents and extended abstracts.</p>
+                        <p>Experience using TikZ to draw diagrams and graphs.</p>
+                    </section>
+                    <section>
+                        <h1>Windows & Microsoft Office Suite</h1>
+                        <p>Years of experience using Windows and Office software at home and at school, also have an <a href="http://ecdl.org/">ECDL</a> certificate.</p>
+                    </section>
                 </section>
             </section>
             <section>
                 <h1>Competitions</h1>
                 <section>
                     <h1>Hackathons</h1>
+                    <ul>
+                        <li><b>HackITall</b> &mdash; developed an <a href="https://github.com/ToniBiro/HackITall">intelligent shopping list app</a></li>
+                        <li><b>UiPath RPA Challenge</b> &mdash; tried to <a href="https://connect.uipath.com/community/project/probothelper">automate PR & marketing departments</a></li>
+                    </ul>
                 </section>
                 <section>
                     <h1>Competitive Programming Contests</h1>
-                </section>
-                <section>
-                    <h1>Robot Programmer</h1>
+                    <ul>
+                        <li><b>Informatics Olympiad</b> &mdash; <a href="http://olimpiada.info/oji2016/index.php?cid=rezultate&w=lic&judet=10&clasa=10">good results</a> at city level</li>
+                        <li><b>C# Olympiad</b> &mdash; <a href="https://www.onti.ro/oti/2017/csarp/tic_pagina_judet.php?actiune=Bucuresti">second place</a> on Bucharest</li>
+                    </ul>
                 </section>
             </section>
             <section>
                 <h1>Hobbys</h1>
                 <section>
                     <h1>Foreign Languages</h1>
+                    <p>Romanian is my native language. I've been learning English since kindergarten and I have a Cambridge FCE attesting C1 language level. I've studied German in high school. Everything else I've learned using <a href="https://www.duolingo.com/profile/GabrielMajeri">Duolingo</a>: Hungarian, Esperanto, Japanese, French, Spanish, Italian and Russian.</p>
                 </section>
                 <section>
                     <h1>Music</h1>
@@ -77,8 +199,5 @@
                 </section>
             </section>
         </main>
-        <footer>
-            <p><small>© 2019 Gabriel Majeri</small></p>
-        </footer>
     </body>
 </html>
