@@ -4,22 +4,20 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 1rem 2rem;
-    max-width: 52rem;
+    display: flex;
+    justify-content: center;
 }
 
-@media screen and (min-width: 54rem) {
-    body {
-        margin-left: auto;
-        margin-right: auto;
-    }
+main {
+    margin: 1rem 2rem;
+    max-width: 52rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-body > header h1 {
+#name {
     text-align: center;
 }
 
@@ -65,7 +63,11 @@ section p {
 }
 
 /* Section side */
-#experience section,#education section {
+#skills, #competitions {
+    page-break-before: always;
+}
+
+#experience section, #education section {
     margin-left: 2rem;
     padding-left: 1rem;
     border-left: 2px solid rgba(128, 128, 128, 0.25);
