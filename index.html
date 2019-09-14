@@ -20,12 +20,12 @@
         <header>
             <h1>Gabriel Majeri</h1>
 
-            <ul>
+            <ul id="links">
                 <li><a href="https://gabrielmajeri.ro"><i class="fas fa-home"></i>&nbsp;gabrielmajeri.ro</a></li>
                 <li><a href="mailto:gabriel.majeri6@gmail.com"><i class="fas fa-envelope-square"></i>&nbsp;gabriel.majeri6@gmail.com</a></li>
-                <li><a href="https://github.com/GabrielMajeri"><i class="fab fa-github-square"></i>&nbsp;GabrielMajeri</a></li>
-                <li><a href="https://www.linkedin.com/in/gabriel-majeri/"><i class="fab fa-linkedin"></i>&nbsp;gabriel-majeri</a></li>
-                <li><a href="https://www.kaggle.com/gabrielmajeri"><i class="fab fa-kaggle"></i>&nbsp;gabrielmajeri</a></li>
+                <li><a href="https://github.com/GabrielMajeri"><i class="fab fa-github-square"></i>&nbsp;<span class="link-prefix">github.com/</span>GabrielMajeri</a></li>
+                <li><a href="https://www.linkedin.com/in/gabriel-majeri/"><i class="fab fa-linkedin"></i>&nbsp;<span class="link-prefix">linkedin.com/in/</span>gabriel-majeri</a></li>
+                <!--<li><a href="https://www.kaggle.com/gabrielmajeri"><i class="fab fa-kaggle"></i>&nbsp;<span class="link-prefix">kaggle.com/</span>gabrielmajeri</a></li>-->
             </ul>
         </header>
         <main>
@@ -34,7 +34,7 @@
                 <p>I am a computer science student who is always eager to learn new things. I'm highly passionate about software engineering and look forward to contributing to interesting projects.</p>
                 <!-- TODO: favourite quote -->
             </section>
-            <section>
+            <section id="experience">
                 <h1>Experience</h1>
                 <section>
                     <header>
@@ -48,13 +48,13 @@
                     </ul>
                 </section>
             </section>
-            <section>
+            <section id="education">
                 <h1>Education</h1>
                 <section>
                     <header>
-                        <h1>Faculty of Mathematics and Computer Science, University of Bucharest</h1>
+                        <h1>Faculty of Mathematics and Computer Science,<br/>University of Bucharest</h1>
                         <span class="time-span">2018&ndash;2021</span>
-                        <span>Computer Science BSc</span>
+                        <div>Computer Science BSc</div>
                     </header>
                     <p>Excellent grades at software engineering courses such as <em>object-oriented programming</em> and <em>algorithms and data structures</em>, and mathematical courses such as <em>algebra</em> and <em>real analysis</em>.</p>
                 </section>
@@ -62,7 +62,7 @@
                     <header>
                         <h1>„Mihai Viteazul” National College</h1>
                         <span class="time-span">2014&ndash;2018</span>
-                        <span>High School</span>
+                        <div>High School</div>
                     </header>
                     <p>Graduated at the top of the intensive informatics class.</p>
                 </section>
@@ -91,7 +91,7 @@
                     <p>Our team was a finalist in each participating year, and in our second year we won first place and went to the global competition in Detroit.</p>
                 </section>
             </section>
-            <section>
+            <section style="page-break-before: always">
                 <h1>Skills</h1>
                 <section>
                     <h1>Programming Languages</h1>
@@ -139,35 +139,19 @@
                     </section>
                 </section>
                 <section>
-                    <h1>Technologies</h1>
-                    <section>
-                        <header>
-                            <h1>Git</h1>
-                            <span class="time-span">4+ years</span>
-                        </header>
-                        <p>Experience with Git-based workflows, maintaining repositories, reviewing code and handling merge conflicts.</p>
-                    </section>
-                    <section>
-                        <header>
-                            <h1>Linux</h1>
-                            <span class="time-span">5+ years</span>
-                        </header>
-                        <p>Bash scripting for automating various tasks.</p>
-                        <p>Set up and managed virtual machines with <a href="https://libvirt.org/">libvirt</a> and <a href="https://www.qemu.org/">QEMU</a>.</p>
-                        <p>Familiarity with <a href="https://www.docker.com/">Docker</a> and <code>docker-compose</code>, used for handling software dependencies.</p>
-                    </section>
-                    <section>
-                        <h1>LaTeX</h1>
-                        <p>Used for editing school documents and extended abstracts.</p>
-                        <p>Experience using TikZ to draw diagrams and graphs.</p>
-                    </section>
-                    <section>
-                        <h1>Windows & Microsoft Office Suite</h1>
-                        <p>Years of experience using Windows and Office software at home and at school, also have an <a href="http://ecdl.org/">ECDL</a> certificate.</p>
-                    </section>
+                    <header>
+                        <h1>Technologies</h1>
+                        <span>Software I've worked with.</span>
+                    </header>
+                    <ul>
+                        <li><b>Git</b>: Experience with Git-based workflows, maintaining repositories, reviewing code and handling merge conflicts</li>
+                        <li><b>Linux</b>: Bash scripting; virtual machines with <a href="https://libvirt.org/">libvirt</a> and <a href="https://www.qemu.org/">QEMU</a>; used <a href="https://www.docker.com/">Docker</a> and <code>docker-compose</code></li>
+                        <li><b>LaTeX</b>: editing school documents and research papers</li>
+                        <li><b>Windows</b> and <b>Microsoft Office Suite</b>: <a href="http://ecdl.org/">ECDL</a> certificate</li>
+                    </ul>
                 </section>
             </section>
-            <section>
+            <section style="page-break-before: always">
                 <h1>Competitions</h1>
                 <section>
                     <h1>Hackathons</h1>
@@ -185,7 +169,7 @@
                 </section>
             </section>
             <section>
-                <h1>Hobbys</h1>
+                <h1>Hobbies</h1>
                 <section>
                     <h1>Foreign Languages</h1>
                     <p>Romanian is my native language. I've been learning English since kindergarten and I have a Cambridge FCE attesting C1 language level. I've studied German in high school. Everything else I've learned using <a href="https://www.duolingo.com/profile/GabrielMajeri">Duolingo</a>: Hungarian, Esperanto, Japanese, French, Spanish, Italian and Russian.</p>

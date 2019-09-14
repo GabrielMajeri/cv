@@ -3,4 +3,13 @@ body {
     width: 21cm;
     height: 29.7cm;
     margin: 0.7in 1in;
+    padding-right: 5rem;
+}
+
+#links li {
+    flex-basis: 45%;
+}
+
+#links .link-prefix {
+    display: inline;
 }

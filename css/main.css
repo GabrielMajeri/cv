@@ -14,3 +14,59 @@ body {
         margin-right: auto;
     }
 }
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+body > header h1 {
+    text-align: center;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+}
+
+a, a:visited {
+    color: rgb(0, 0, 200);
+}
+
+/* Navigation bar styling */
+#links {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#links li {
+    flex-grow: 0;
+    flex-shrink: 50%;
+    margin: 0.3rem 0.5rem;
+    text-align: center;
+}
+
+#links .link-prefix {
+    display: none;
+}
+
+/* Section header styling */
+section header h1 {
+    display: inline-block;
+}
+
+.time-span {
+    float: right;
+}
+
+section p {
+    clear: both;
+}
+
+/* Section side */
+#experience section,#education section {
+    margin-left: 2rem;
+    padding-left: 1rem;
+    border-left: 2px solid rgba(128, 128, 128, 0.25);
+}
