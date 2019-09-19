@@ -64,7 +64,7 @@ section p {
 
 /* Section side */
 #skills, #competitions {
-    page-break-before: always;
+    page-break-after: always;
 }
 
 #experience section, #education section {
