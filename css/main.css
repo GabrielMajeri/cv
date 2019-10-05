@@ -151,10 +151,6 @@ section p {
 }
 
 /* Section side */
-#skills, #competitions {
-    page-break-after: always;
-}
-
 #experience section, #education section {
     margin-left: 2rem;
     padding-left: 1rem;
