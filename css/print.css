@@ -12,3 +12,11 @@ body {
 #links .link-prefix {
     display: inline;
 }
+
+#navigation {
+    display: none;
+}
+
+#competitions {
+    page-break-before: always;
+}
