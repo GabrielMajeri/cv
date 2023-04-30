@@ -57,6 +57,7 @@ a:visited {
 /* Navigation bar styling */
 #navigation {
   position: fixed;
+  z-index: 50;
 }
 
 #navigation ul {
@@ -94,16 +95,20 @@ a:visited {
 
   #navigation i {
     display: inline-block;
-    transition: transform 0.25s ease-out, color 0.15s ease;
+    transition: transform 0.25s ease-out, color 0.15s ease,
+      background-color 0.1s linear 0.15s;
   }
 
   #navigation ul {
     margin: 0;
+    background-color: rgb(63, 81, 181);
     padding: 0;
 
     max-height: 0;
     overflow-y: hidden;
-    transition: max-height 0.5s ease-out;
+    transition: padding 0.5s ease-out, max-height 0.5s ease-out;
+
+    text-align: center;
   }
 
   #navigation ul a {
@@ -113,13 +118,24 @@ a:visited {
     padding: 0.75rem 2rem;
   }
 
+  #navigation ul a:hover {
+    background-color: rgb(71, 91, 204);
+  }
+
+  #navigation ul a:active {
+    background-color: rgb(78, 99, 220);
+  }
+
   #navigation input:checked ~ i {
     transform: rotate(-90deg);
     color: white;
+    background-color: rgb(63, 81, 181);
   }
 
   #navigation input:checked ~ ul {
+    display: block;
     max-height: 30rem;
+    padding: 3rem 0 0.5rem;
   }
 }
 
