@@ -1,22 +1,26 @@
 body {
-    /* A4 paper size */
-    width: 21cm;
-    height: 29.7cm;
-    margin: 0.7in;
+  /* A4 paper size */
+  width: 21cm;
+  height: 29.7cm;
+  margin: 0.7in;
 }
 
 #links li {
-    flex-basis: 45%;
+  flex-basis: 45%;
 }
 
 #links .link-prefix {
-    display: inline;
+  display: inline;
 }
 
 #navigation {
-    display: none;
+  display: none;
+}
+
+.codersrank-summary {
+  display: none;
 }
 
 #competitions {
-    page-break-before: always;
+  page-break-before: always;
 }
